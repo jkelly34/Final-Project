@@ -1,0 +1,16 @@
+import numpy as np
+
+def load_npz(file):
+    data = np.load(file)
+    x, y = data['x_train'], data['y_train']
+    return x, y
+
+data = load_npz('/Users/finnpage/Downloads/recycle_data_shuffled.npz')
+file = '/Users/finnpage/Downloads/recycle_data_shuffled.npz'
+data = np.load(file)
+
+!pip3 install matplotlib
+
+import maptlotlib.pyplot as plt
+
+plt.imshow(data['x_train'][0])
