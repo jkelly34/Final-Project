@@ -1,0 +1,11 @@
+#import relevant libraries:
+# TensorFlow and tf.keras
+import tensorflow as tf
+
+# Helper libraries
+import numpy as np
+import matplotlib.pyplot as plt
+
+#pre-processing images for standardization and noise reduction on the model:
+train_images = train_images / 255.0
+test_images = test_images / 255.0
